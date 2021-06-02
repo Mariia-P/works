@@ -1,0 +1,344 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+/* loader */
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: white;
+    z-index: 2;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+}
+
+.done {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    width: 25%;
+    height: 100vh;
+    background: url(./images/loader.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+/* loader end*/
+
+/* main */
+
+.infinity-slider-wrap {
+    width: 25%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    min-width: 320px;
+    min-height: 500px;
+}
+
+.infinity-slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slider-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    transition: all ease 300ms;
+}
+
+.infinity-slider .opacity0 {
+    opacity: 0;
+}
+
+/* main end */
+
+/* background */
+.peach {
+    background: url(./images/peach-BG.jpg) no-repeat center center;
+    background-size: cover;
+}
+.pepermint {
+    background: url(./images/peppermint-BG.jpg) no-repeat center center;
+    background-size: cover;
+}
+.raspberry {
+    background: url(./images/raspberry-BG.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* background end */
+
+/* btn */
+
+.btn {
+    position: absolute;
+    top: 60%;
+    transition: transform 200ms ease;
+}
+.btn-infinity-left {
+    left: 17.7px;
+}
+.btn img {
+    width: 70%;
+    height: 70%;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.btn-infinity-right {
+    right: 0;
+}
+
+.shop {
+    width: 62%;
+    top: 92%;
+    right: 25%;
+}
+
+/* btn end */
+
+/* common  */
+.absolute_elements {
+    position: absolute;
+    object-fit: cover;
+}
+
+.slide-single {
+    transition: all ease 1000ms;
+    top: 50%;
+    width: 60%;
+    z-index: 1;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* common end */
+
+/* __peach__elements__ */
+
+.peach_img {
+    width: 32%;
+    top: 41%;
+    right: 10%;
+}
+
+.orange_img {
+    width: 47%;
+    top: 68%;
+    left: -2%;
+}
+.banner_img {
+    width: 19%;
+    right: 73%;
+}
+
+.tagline_img {
+    width: 95%;
+}
+
+/* __pepermint__elements___ */
+
+.pepermint1_img {
+    width: 49%;
+    top: 65%;
+    right: 48%;
+}
+.pepermint2_img {
+    width: 32%;
+    top: 89%;
+    right: -7%;
+}
+.seed1_img {
+    width: 10%;
+    top: 81%;
+    right: 9%;
+}
+.seed2_img {
+    width: 13%;
+    top: 61%;
+    right: -9%;
+}
+.strawberry1_img {
+    width: 32%;
+    top: 41%;
+    right: 82%;
+}
+.strawberry2_img {
+    width: 39%;
+    top: 45%;
+    right: 2%;
+}
+
+/* _raspberry__elements_ */
+
+.lemon_img {
+    width: 56%;
+    top: 67%;
+    right: 51%;
+}
+
+.petal2_img {
+    width: 17%;
+    top: 49%;
+    right: 67%;
+}
+.petal3_img {
+    width: 27%;
+    top: 38%;
+    right: -8%;
+}
+.petal4_img {
+    width: 23%;
+    top: 56%;
+    right: 88%;
+}
+
+.petal5_img {
+    width: 24%;
+    top: 65%;
+    right: 10%;
+}
+
+.raspberry1_img {
+    width: 39%;
+    top: 31%;
+    right: 72%;
+}
+.raspberry2_img {
+    width: 29%;
+    top: 42%;
+    right: 16%;
+}
+.raspberry3_img {
+    width: 32%;
+    top: 51%;
+    right: 6%;
+}
+
+/* _animations_ */
+
+@keyframes scaling {
+    0% {
+        transform: scale(0.1);
+    }
+    30% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes opaciting {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.appear_img {
+    animation: scaling 1000ms ease;
+}
+
+.appear_opacity {
+    animation: opaciting 3000ms ease;
+}
+
+/* midia */
+@media (min-width: 320px) {
+    .infinity-slider-wrap,
+    .loader {
+        width: 100%;
+
+        min-width: 300px;
+    }
+    .shop {
+        width: 55%;
+    }
+}
+
+@media (min-width: 320px) {
+    .infinity-slider-wrap,
+    .loader {
+        width: 90%;
+    }
+}
+
+@media (min-width: 550px) {
+    .infinity-slider-wrap,
+    .loader {
+        width: 80%;
+    }
+    .shop {
+        width: 50%;
+    }
+}
+
+@media (min-width: 700px) {
+    .infinity-slider-wrap,
+    .loader {
+        width: 60%;
+    }
+}
+
+@media (min-width: 600px) {
+    .infinity-slider-wrap,
+    .loader {
+        width: 55%;
+    }
+}
+
+@media (min-width: 800px) {
+    .infinity-slider-wrap,
+    .loader {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .infinity-slider-wrap,
+    .loader {
+        width: 35%;
+    }
+}
+@media (min-width: 1430px) {
+    .infinity-slider-wrap,
+    .loader {
+        width: 30%;
+    }
+}
+@media (min-width: 1700px) {
+    .infinity-slider-wrap,
+    .loader {
+        width: 25%;
+    }
+}
+
+/* midia end */
