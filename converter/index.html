@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;1,400;1,700&family=El+Messiri:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <!-- <script
+            src="https://kit.fontawesome.com/dbd9d370bb.js"
+            crossorigin="anonymous"
+        ></script> -->
+    </head>
+    <body>
+        <div class="conteiner">
+            <form action="url" method="get">
+                <fieldset>
+    
+                    <legend>Field to covert values</legend>
+                    <div class="count-wrapper">
+
+                        <label><input
+                            type="number"
+                            placeholder="enter length"
+                            min="1"
+                            max="100000"
+                            value="1"
+                            name=""
+                            id="number1"
+                    /></label>
+                    <label>
+                        <!-- <input
+                            type="number"
+                            placeholder="enter length"
+                            min="1"
+                            max="100000"
+                            value="1"
+                            name=""
+                            id="number2"/> -->
+                            <output></output>
+                </label>
+                    </div>
+                    
+
+                <!-- <label for="sel">length</label> -->
+                <div class="unit-wrapper">
+                    <select name="sel" id="sel1" required>
+                        <!-- <option selected disabled value="">
+                            select a unit
+                        </option> -->
+                    </select>
+                
+                
+                        <!-- <label for="sel">length</label> -->
+                    <select name="sel" id="sel2" required>
+                        <!-- <option selected disabled value="">
+                            select a unit
+                        </option> -->
+                    </select>
+                </div>
+                        
+                        <div class="button-wrapper">
+
+                            <button>To convert</button>
+                        </div>
+
+                </fieldset>
+            </form>
+    
+                    
+               
+            <form action="url" method="get" id="wrapperForm">
+                    <fieldset>
+                        
+                        <legend>Field to add a new value</legend>
+                        <!-- <input type="submit" value="Отправить форму" name="" id="">
+                        <input type="reset" value="Сбросить" name="" id=""> -->
+                        
+                    
+                    
+                        <label>New unit<input type="text" value="" placeholder="Name of unit" required minlength="1" 
+                        maxlength="3" name="newUnit" autocomplete="off" id="inputMeasure"></label>
+                    <label>New coefficient<input
+                        type="number"
+                        placeholder="enter coefficient"
+                        step="any"
+                        value="0"
+                        name=""
+                        autocomplete="off"
+                        id="inputCoefficient"
+                /></label>
+                <div class="button-wrapper">
+
+                    <button>Add new unit</button>
+                </div>
+               
+            </fieldset>
+        </form>
+                        
+                
+                    
+               
+                
+                
+            
+        </div>
+        <script src="./index1.js"></script>
+    </body>
+</html>

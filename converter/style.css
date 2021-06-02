@@ -1,0 +1,111 @@
+html {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Arsenal', sans-serif;
+}
+h1 {
+    font-weight: 600;
+    font-family: 'El Messiri', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+/* h2 {
+    font-weight: 400;
+    font-family: 'El Messiri', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+} */
+/* strong {
+    font-weight: 900;
+}
+.navbar_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    height: 80px;
+} */
+/* .navbar_link {
+    text-decoration: none;
+    margin: 20px;
+    color: darkslateblue;
+    font-size: 3rem;
+    transition: 0.5s;
+}
+.navbar_link:hover {
+    display: block;
+    color: mediumseagreen;
+    transform: scale(1.5) translateY(-15px) rotateZ(-15deg);
+} */
+fieldset {
+    max-width: 500px;
+    margin: 30px auto 40px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    
+}
+button,
+select,
+input,
+output {
+    width: 30%;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    border: 2px solid rosybrown;
+    
+    
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+.unit-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+output{
+    min-width: 100px;
+    margin-left: 11.5rem;
+}
+/* input[type='file'] {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    
+} */
+/* input[type='radio'],
+input[type='checkbox'] {
+    width: auto;
+} */
+label {
+    margin-right: 15px;
+}
+label:last-of-type {
+    margin: 0;
+}
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+/* .hidden {
+    display: none;
+} */
+
+/* ************************ */
+
+
+/* .add-wrapper > button {
+    width: 100%;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    border: 2px solid rgb(197, 39, 39);
+} */
